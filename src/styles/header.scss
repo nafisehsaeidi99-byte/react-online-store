@@ -1,0 +1,51 @@
+@use './Styles' as * ;
+
+header {
+    background-color: $button-color;
+}
+
+#mystore {
+    color: $background-color;
+    margin: 20px 25px 0 0 ;
+    float: right;
+}
+
+#box {
+    text-align: left;
+    margin: 10px 0 0 25px;
+    font-size: 16px;
+    color: $background-color;
+}
+
+button {
+    direction: rtl;
+    display: flex;
+
+}
+header button {
+  width: fit-content;
+  padding: 7px 17px;
+  margin: 6px auto 8px 18px;
+  border-radius: 20px;
+  background-color:  $background-color;
+  text-align: center;
+  color:  $button-color;
+  font-size: 16px;
+  border: 1px solid #6C4CE8;
+  font-family: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+
+}
+ //ریسپانسیو 
+@media screen and (max-width: 380px) {
+
+    header button {
+       width: auto;
+       padding: 8px 17px;
+       font-size: 12px;
+       white-space: nowrap;
+      
+     
+    }
+}

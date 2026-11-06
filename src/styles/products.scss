@@ -1,0 +1,187 @@
+@use './Styles' as * ;
+
+body {
+    background-color: #F3EEFF;
+    
+    margin: 0;
+}
+#top {
+    background-color: $background-color;
+    
+    width: 100%;
+}
+
+//محصولات
+#headerproducts {
+    display: inline-block;
+    color:  $background-color;
+    color: #344767;
+    margin: 10px 35px 10px 0;
+    border-bottom: 3px solid #344767;
+    padding-bottom: 3px;
+    width: 3%;
+}
+
+//کتگوری ها
+.categories {
+    
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+}
+
+.categories button {
+    display: block;
+    background-color: rgb(248, 238, 248);
+    border: 2px solid #D1D5DB;
+    border-radius: 12px;
+    margin: 0 5px;
+    width: 7%;
+    padding: 10px 18px;
+    text-align: center;
+    color: #6C4CE8;
+    //فونت رو از ایندکس دات سی اس اس گرفتیم 
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+  
+     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.categories button:hover {
+    background-color: #6C4CE8;
+    color: #FFFFFF;
+    border-color: #6C4CE8;
+}
+
+
+.product-grid {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr);
+    gap: 24px;
+    
+}
+
+//محصولات و صفحه بندیشون 
+.product-arrangement {
+     display: flex;
+    flex-direction: column;
+    height: 90%;
+    box-sizing: border-box;
+    margin: 30px auto 30px auto;
+    background-color: white;
+    border: 2px solid rgb(239, 216, 239);
+    border-radius: 12px;
+   
+}
+
+.image {
+  background-color: #DCD2FC;
+  width: 80%;
+  height: 290px;
+  border-radius: 8px ;
+  margin: 13px auto 0 auto ;
+  object-fit: contain;
+}
+.product-arrangement img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+//دکمه افزودن به سبد خرید
+.product-grid button{
+    margin-top: auto;
+    margin-bottom: 13px;
+    background-color: #6C4CE8;
+    border:  #6C4CE8;
+    border-radius: 8px;
+    width: 80%;
+    margin: auto auto 13px auto;
+    padding: 9px 10px;
+    text-align: center;
+    color: white;
+    display: block;
+    font-family: var(--sans);
+    cursor: pointer;
+    
+
+}
+
+//تایتل
+.product-grid h3 {
+    width: 97%;
+    text-align: center;
+    
+}
+
+//استایل دسته بندی و تایتل و قیمت داخل کادر ها
+.product-arrangement h4 ,
+.product-arrangement h3 ,
+.product-arrangement p {
+    margin: 7px auto;
+}
+
+
+//ریسپانسیو
+
+//کتگوری
+@media screen and (max-width: 480px) {
+    .categories button {
+     width: auto;
+     margin: 5px auto;
+     font-size: 12px;
+     padding: 7px 10px;
+     white-space: nowrap;
+}
+}
+
+@media screen and (min-width: 482px) and (max-width: 1023px) {
+       .categories button {
+     width: auto;
+    
+     font-size: 12px;
+     padding: 7px 10px;
+     white-space: nowrap;
+    }
+}
+//محصولات
+// موبایل
+@media screen and (max-width: 480px) {
+   .product-grid {
+     grid-template-columns : 1fr;
+   }
+}
+
+// تبلت
+@media screen and (min-width: 482px) and (max-width: 1023px) {
+    body{
+        background-color: #F3EEFF;
+    }
+    .product-grid {
+
+     grid-template-columns : repeat(2 , 1fr) ;
+    padding: 0 20px;
+    }
+    .product-arrangement {
+        height: auto;
+        min-height: 440px;
+    }
+    .image {
+    height: 220px;
+}
+}
+
+// دسکتاپ کوچک و لپ‌تاپ
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+     .product-grid {
+     grid-template-columns : repeat(4 , 1fr) ;
+     }
+}
+

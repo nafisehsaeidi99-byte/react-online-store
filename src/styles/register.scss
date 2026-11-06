@@ -1,0 +1,122 @@
+ @use './Styles' as *;
+ 
+ body {
+    background-color: $background-color;
+    color: $text-color;
+      }
+ .registerpage {
+
+ button {
+    background-color: $button-color;
+    display: block;
+   //  margin-left: 370px;
+    padding: 10px 20px;
+   //  width: 31%;
+   width: 300px;
+    border: 2px solid #5638C8;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 10px ;
+    box-sizing: border-box
+
+ }
+
+ form {
+   background-color:#F5F1FF;
+    margin: 150px auto 0 ;
+    padding: 48px 32px;
+    border: 1px solid #E3DFF0;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(108, 76, 232, 0.10);
+   
+
+ }
+ input {
+    display: block;
+   //  margin-left: 370px;
+    margin-top: 10px;
+    padding: 10px 20px;
+   //  width: 27%;
+   width: 300px;
+    border: 2px solid #D9D6E8;
+    border-radius: 8px;
+    text-align: right;
+    box-sizing: border-box;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: #6C4CE8;
+    
+ }
+
+ .register1 {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 21px;
+    margin-top: 20px;
+    
+ }
+
+ h2 {
+    margin-bottom: 32px;
+ }
+ 
+ input::placeholder {
+     color: #A39BBE;
+     font-size: 14px;
+     text-align: right;
+ }
+
+ #forgetpass {
+   display: inline-block;
+   margin-top: 15px;
+ }
+
+ .regphoneerr {
+   color: #D96C6C;
+   font-size: 13px;
+   text-align: right;
+   margin-right: 10px;
+ }
+.regpasserr {
+   color: #D96C6C;
+   font-size: 13.5px;
+   text-align: right;
+   margin-right: 10px;
+ }
+ .regnameerr {
+    color: #D96C6C;
+   font-size: 13px;
+   text-align: right;
+   margin-right: 10px;
+ }
+
+ }
+ 
+ //ریسپانسیو 
+
+ // گوشی 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+   .registerpage {
+      width: 100% ;
+      display: flex;
+      justify-content: center;
+   }
+      .registerpage form {
+ 
+      width: 75%;
+      max-width: 400px;
+      height: auto;
+      margin: 60px auto ;
+      padding: 32px 20px;
+      
+   }
+   .registerpage input , .registerpage button {
+   width: 100%;
+   max-width: 440px;
+   box-sizing: border-box;
+  }
+}
+
