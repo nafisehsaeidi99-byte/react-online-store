@@ -41,23 +41,6 @@ function Products () {
 
     } , [] )
 
-    // useEffect(() => {
-    //     axios.get('https://dummyjson.com/products')
-    //         .then(res => {
-    //             const apiProducts = res.data.products;
-
-    //             if (apiProducts && apiProducts.length > 0) {
-    //                 setProducts(apiProducts);
-    //             } else {
-    //                 setProducts(localProducts);
-    //             }
-    //         })
-    //         .catch(error => {
-    //             console.log("خطا در دریافت محصولات:", error);
-    //             setProducts(localProducts);
-    //         });
-
-    // }, []);
     
 
     let filteredProducts;
