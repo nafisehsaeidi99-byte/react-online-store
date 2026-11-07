@@ -1,16 +1,41 @@
-# React + Vite
+# فروشگاه اینترنتی با React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+یک پروژه فروشگاهی با استفاده از React و با هدف پیاده‌سازی مفاهیم اصلی توسعه فرانت‌اند.
 
-Currently, two official plugins are available:
+# معرفی پروژه
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+این پروژه امکان ثبت‌نام و ورود کاربران، مشاهده محصولات، انتخاب دسته‌بندی محصولات و مدیریت سبد خرید را فراهم می‌کند.
 
-## React Compiler
+# تکنولوژی‌های استفاده‌شده
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- React
+- React Router DOM
+- Context API
+- SCSS
+- Axios (در نسخه اولیه پروژه)
 
-## Expanding the ESLint configuration
+# امکانات پروژه
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- صفحه ثبت‌نام و ورود کاربران
+- اعتبارسنجی فرم‌ها
+- ذخیره اطلاعات کاربر در LocalStorage
+- محافظت از مسیرهای خصوصی با Protected Routes
+- نمایش محصولات و دسته‌بندی آن‌ها
+- افزودن محصولات به سبد خرید
+- حذف محصولات از سبد خرید
+- محاسبه مجموع قیمت سبد خرید
+- مدیریت وضعیت سبد خرید با Context API
+
+# ساختار و مدیریت پروژه
+
+در این پروژه از React Hooks برای مدیریت وضعیت و از React Router برای مسیریابی بین صفحات استفاده شده است.
+
+
+نحوه اجرا پروژه :
+git clone https://github.com/nafisehsaeidi99-byte/react-online-store.git
+cd react-online-store
+npm install
+npm run dev
